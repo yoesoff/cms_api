@@ -34,6 +34,7 @@
 		<spring-boot-starter-data-rest.version>2.2.6.RELEASE</spring-boot-starter-data-rest.version>
 		<sonar-maven-plugin.version>3.7.0.1746</sonar-maven-plugin.version>
 		<spring-cloud-starter-netflix-eureka-client.version>2.2.2.RELEASE</spring-cloud-starter-netflix-eureka-client.version>
+		<io.jsonwebtoken.version>0.9.1</io.jsonwebtoken.version>
 	</properties>
 
 	<dependencies>
@@ -82,10 +83,16 @@
 			<version>${spring-boot-starter-web.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		
-		<!-- <dependency>
+		<!-- Security -->
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>  -->
+		</dependency>
+		<dependency>
+		    <groupId>io.jsonwebtoken</groupId>
+		    <artifactId>jjwt</artifactId>
+		    <version>${io.jsonwebtoken.version}</version>
+		</dependency>
 		
 		<!-- Tools -->
 		<dependency>
